@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin center {
+    justify-content: center;
+    align-items: center;
+    background: #cccccc;
+    display: flex;
+    opacity: 0.6;
+}
+
+@mixin paragraph {
+    h3 {
+        margin: 10px 0;
+        font-weight: bold;
+    }
+    #author {
+        color: #808080;
+        margin-top: 8px;
+    }
+}
+.content-top {
+    background-color: white;
+    width: 800px;
+    margin: 10px auto;
+    display: flex;
+    .box-1 {
+        @include center();
+        flex: 2;
+        height: 230px;
+        margin-right: 13px;
+    }
+    .para-1 {
+        flex: 1;
+        padding: 6px;
+        @include paragraph();
+    }
+}
+
+.content-bot {
+    width: 800px;
+    margin: 16px auto;
+    display: flex;
+    .container {
+        flex: 1;
+        margin-right: 16px;
+        .box-2 {
+            @include center();
+            height: 130px;
+            text-align: center;
+        }
+        .para-2 {
+            @include paragraph();
+        }
+    }
+}

@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    width: 600px;
+    display: flex;
+    background: #ef5350;
+    margin: 1px auto;
+}
+
+div[class^="col-"] {
+    border-radius: 3px;
+    color: white;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    text-align: right;
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        flex: $i;
+    }
+}

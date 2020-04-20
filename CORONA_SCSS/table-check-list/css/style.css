@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+table {
+  margin: 30px auto;
+  border: 1px solid #cccccc;
+  border-collapse: collapse; }
+  table th {
+    background: #00ccff;
+    color: #ffffff;
+    padding: 3px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: sans-serif;
+    border: 1px solid #cccccc;
+    border-collapse: collapse; }
+  table td {
+    padding: 3px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: sans-serif;
+    border: 1px solid #cccccc;
+    border-collapse: collapse; }
+  table .delete {
+    color: #fd0000; }

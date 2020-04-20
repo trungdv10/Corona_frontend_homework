@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 950px;
+  background: #cccccc;
+  margin: 0 auto; }
+  .container h3 {
+    text-align: left;
+    color: #333333;
+    padding: 10px;
+    font-weight: bold; }
+  .container .row {
+    width: 950px;
+    display: flex; }
+    .container .row div[class^="col-"] {
+      background: #333333;
+      line-height: 20px;
+      margin: 5px;
+      text-align: center;
+      border-radius: 3px;
+      color: #fffdfd; }
+    .container .row #hidden {
+      visibility: hidden; }
+    .container .row div[class^="col-"]:first-child {
+      margin-left: 0; }
+    .container .row div[class^="col-"]:last-child {
+      margin-right: 0; }
+
+.col-1 {
+  flex: 1 50px; }
+
+.col-2 {
+  flex: 2 117.5px; }
+
+.col-3 {
+  flex: 3 176.25px; }
+
+.col-4 {
+  flex: 4 235px; }
+
+.col-5 {
+  flex: 5 293.75px; }
+
+.col-6 {
+  flex: 6 352.5px; }
+
+.col-7 {
+  flex: 7 411.25px; }
+
+.col-8 {
+  flex: 8 470px; }
+
+.col-9 {
+  flex: 9 528.75px; }
+
+.col-10 {
+  flex: 10 587.5px; }
+
+.col-11 {
+  flex: 11 646.25px; }
+
+.col-12 {
+  flex: 12 705px; }
+
+.col-13 {
+  flex: 13 763.75px; }
+
+.col-14 {
+  flex: 14 822.5px; }
+
+.col-15 {
+  flex: 15 881.25px; }
+
+.col-16 {
+  flex: 16 940px; }

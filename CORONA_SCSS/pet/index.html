@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form action="">
+        <div class="container">
+            <div class="content-left">
+                <div class="top">
+                    <img src="legdog.png" alt="legdog">
+                    <h3>PUPASSURE</h3>
+                    <div class="clear-fix"></div>
+                </div>
+                <div class="bottom">
+                    <img src="pet.png" alt="dog">
+                </div>
+            </div>
+
+            <div class="content-right">
+                <h2>Yay, puppies! Ensure your<br>
+                    pup gets the best care!
+                </h2>
+                <div class="row">
+                    <div>
+                        <p>Name</p>
+                        <input type="text" id="name" placeholder="Pet's name">
+                    </div>
+                    <div class="image">
+                        <img src="camera.png" alt="camera" width="40px" height="40px">
+                        <input type="file" id="camera">
+                        <p>Upload a photo</p>
+                        <input type="file">
+                        <div class="clear-fix"></div>
+                    </div>
+                    <div class="clear-fix"></div>
+                </div>
+
+                <div class="clear-fix"></div>
+
+                <div class="row">
+                    <div>
+                        <p>Breed</p>
+                        <input type="text" id="breed" placeholder="Pet's breed">
+                    </div>
+                    <div style="margin-left: 30px;">
+                        <p>Birthday</p>
+                        <input type="datetime" id="breed" placeholder="MM/DD/YYYY">
+                    </div>
+                    <div class="clear-fix"></div>
+                </div>
+
+                <div class="clear-fix"></div>
+
+                <div class="row">
+                    <div class="gender">
+                        <p>Gender</p>
+                        <div>
+                            <input type="radio" id="female" name="gender">
+                            <label for="female">Female</label>
+                            <input type="radio" id="male" name="gender">
+                            <label for="male">Male</label>
+                        </div>
+                    </div>
+                    <div class="son" style="margin-left: 30px;">
+                        <p>Spayed or Neutered</p>
+                        <div>
+                            <input type="radio" id="spayed" name="son">
+                            <label for="spayed">Spayed</label>
+                            <input type="radio" id="neutered" name="son">
+                            <label for="neutered">Neutered</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clear-fix"></div>
+
+                <div class="row">
+                    <p>Weight</p>
+                    <div class="weight">
+                        <input type="radio" id="small" name="weight">
+                        <label for="small">0-25 lbs</label>
+                        <input type="radio" id="medium" name="weight">
+                        <label for="medium">25-50 lbs</label>
+                        <input type="radio" id="big" name="weight">
+                        <label for="big">50-100 lbs</label>
+                        <input type="radio" id="large" name="weight">
+                        <label for="large">100+ lbs</label>
+                    </div>
+                </div>
+
+                <div class="clear-fix"></div>
+
+                <div class="footer">
+                    <input type="radio" name="confirm" id="back">
+                    <label for="back">Back</label>
+                    <input type="radio" name="confirm" id="next">
+                    <label for="next">Next</label>
+                    <div class="clear-fix"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

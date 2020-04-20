@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    width: 610px;
+    background: #ef5350;
+    margin: 1px auto;
+    .clear-fix {
+        clear: both;
+    }
+    div[class^="col-"] {
+        color: white;
+        float: left;
+        border-left: 1px solid;
+        line-height: 45px;
+        text-align: right;
+        border-radius: 3px;
+    }
+}
+
+@function getWidth($widthWarp, $item) {
+    @return $widthWarp / $item;
+}
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        width: getWidth(600, 12) * $i;
+    }
+}

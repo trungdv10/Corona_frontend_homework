@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.row {
+  width: 610px;
+  background: #ef5350;
+  margin: 1px auto; }
+  .row .clear-fix {
+    clear: both; }
+  .row div[class^="col-"] {
+    color: white;
+    float: left;
+    border-left: 1px solid;
+    line-height: 45px;
+    text-align: right;
+    border-radius: 3px; }
+
+.col-1 {
+  width: 49.8px; }
+
+.col-2 {
+  width: 99.6px; }
+
+.col-3 {
+  width: 149.4px; }
+
+.col-4 {
+  width: 199.2px; }
+
+.col-5 {
+  width: 249px; }
+
+.col-6 {
+  width: 298.8px; }
+
+.col-7 {
+  width: 348.6px; }
+
+.col-8 {
+  width: 398.4px; }
+
+.col-9 {
+  width: 448.2px; }
+
+.col-10 {
+  width: 498px; }
+
+.col-11 {
+  width: 547.8px; }
+
+.col-12 {
+  width: 597.6px; }

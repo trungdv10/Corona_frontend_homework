@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #d8aa96;
+}
+.clear-fix {
+    clear: both;
+}
+@mixin gender-son {
+    height: 35px;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    margin-top: 3px;
+}
+@mixin center {
+    display: inline-block;
+    width: 66px;
+    padding: 4px;
+    text-align: center;
+    margin: 3px 2px 0px 5px;
+}
+@mixin checked {
+    border: 1px solid #de9f99;
+    background-color: #f7b1ab;
+    border-radius: 3px;
+}
+.container {
+    width: 640px;
+    height: 450px;
+    margin: 50px auto;
+    display: flex;
+    .content-left {
+        flex: 1;
+        background: #807182;
+        .top {
+            margin: 25px 20px;
+            img {
+                float: left;
+                width: 40px;
+                height: 40px;
+            }
+            h3 {
+                float: left;
+                margin-left: 5px;
+                padding: 7px;
+            }
+        }
+        .bottom {
+            margin-top: 180px;
+            img {
+                width: 150px;
+                margin-left: 30px;
+                margin-top: 55px;
+            }
+        }
+    }
+    .content-right {
+        flex: 2;
+        background: #fac7c2;
+        h2 {
+            margin: 20px 25px 15px 25px;
+        }
+        .row {
+            margin-top: 12px;
+            margin-left: 25px;
+            div:nth-child(1) {
+                float: left;
+            }
+            div:nth-child(2) {
+                float: left;
+            }
+            input {
+                width: 170px;
+                height: 35px;
+                margin-top: 3px;
+                border: 1px solid #e5e5e5;
+                border-radius: 3px;
+            }
+            .image {
+                margin-left: 30px;
+                img {
+                    float: left;
+                    position: absolute;
+                }
+                input {
+                    position: absolute;
+                    opacity: 0;
+                }
+                p {
+                    margin-left: 40px;
+                    float: left;
+                    position: absolute;
+                    padding: 12px;
+                }
+            }
+            .gender {
+                div {
+                    @include gender-son();
+                    width: 170px;
+                }
+                input {
+                    display: none;
+                }
+                label {
+                    @include center();
+                }
+                input:checked + label {
+                    @include checked();
+                }
+            }
+            .son {
+                @extend .gender;
+            }
+            .weight {
+                    @include gender-son();
+                    width: 370px;
+                input {
+                    display: none;
+                }
+                label {
+                    display: inline-block;
+                    text-align: center;
+                    margin: 3px 7px 0px 6px;
+                    width: 68px;
+                    padding: 4px;
+                }
+                input:checked + label {
+                    @include checked();
+                }
+            }
+        }
+        .footer {
+            height: 56px;
+            background-color: #ffffff;
+            margin-top: 36px;
+            input {
+                display: none;
+            }
+            label {
+                display: inline-block;
+                width: 75px;
+                text-align: center;
+                margin: 8px 89px 0px 25px;
+                padding: 10px;
+                border: 1px solid #dddddd;
+                border-radius: 35%;
+            }
+            input:checked + label {
+                border: 1px solid #eeeeee;
+                background-color: #807182;
+                border-radius: 50px;
+            }
+        }
+    }
+}
+
