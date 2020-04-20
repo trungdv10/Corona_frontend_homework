@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.row {
+    width: 624px;
+    background: #ef5350;
+    margin: 1px auto;
+}
+.clear-fix {
+    clear: both;
+}
+div[class^="col-"] {
+    color: white;
+    float: left;
+    border: 1px solid #ffffff;
+    line-height: 45px;
+    text-align: right;
+    border-radius: 3px;
+}
+.col-1 {
+    width: 50px;
+}
+.col-2 {
+    width: 102px;
+}
+.col-3 {
+    width: 154px;
+}
+.col-4 {
+    width: 206px;
+}
+.col-5 {
+    width: 258px;
+}
+.col-6 {
+    width: 310px;
+}
+.col-7 {
+    width: 362px;
+}
+.col-8 {
+    width: 414px;
+}
+.col-9 {
+    width: 466px;
+}
+.col-10 {
+    width: 518px;
+}
+.col-11 {
+    width: 570px;
+}
+.col-12 {
+    width: 622px;
+}

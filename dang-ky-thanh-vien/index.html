@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dang Ky Thanh Vien</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <div class="content">
+            <h1>Đăng ký thành viên</h1>
+            <table>
+                <tr>
+                    <th>Nội dung</th>
+                    <th>Giá trị</th>
+                </tr>
+                <tr>
+                    <td>Họ tên:</td>
+                    <td>
+                        <input type="text" id="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td>
+                        <input type="text" id="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mật khẩu:</td>
+                    <td><input type="password" id="pass"></td>
+                </tr>
+                <tr>
+                    <td>Avatar:</td>
+                    <td>
+                        <input type="file" id="avatar">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Số điện thoại:</td>
+                    <td>
+                        <input type="tel" id="phone">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tuổi:</td>
+                    <td>
+                        <select name="age" id="age">
+                            <option value="one">1 tuổi</option>
+                            <option value="two">2 tuổi</option>
+                            <option value="three">3 tuổi</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Giới tính:</td>
+                    <td>
+                        <label class="gender">Nam
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="circle"></span>
+                        </label>
+                        <label class="gender">Nữ
+                            <input type="radio" name="radio">
+                            <span class="circle"></span>
+                        </label>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sở thích:</td>
+                    <td>
+                        <label class="hobbies">One
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="hobbies">Two
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="hobbies">Three
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ghi chú:</td>
+                    <td>
+                        <textarea name="note" id="note" cols="20" rows="2">Buổi học đầu tiên về HTML</textarea>
+                    </td>
+                </tr>
+            </table>
+            <input type="button" value="Đăng ký" id="button">
+        </div>
+    </form>
+</body>
+</html>
